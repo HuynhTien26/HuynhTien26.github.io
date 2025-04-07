@@ -9,16 +9,40 @@ html {
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     text-rendering: optimizeLegibility;
     margin: 30px 0;
 }
 
+/* Container row (bên ngoài) */
 .row {
-    max-width: 960px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa */
+}
+
+/* Cột trái: phần thông tin cá nhân */
+.personal {
     background-color: #42a8c0;
-    box-shadow: -3px 3px 3px 0px rgba(200,200,200, 0.9);
+    color: white;
+    padding: 30px;
+    width: 30%; /* Chiếm 30% chiều rộng */
+    min-height: 100vh; /* Chiều cao tối thiểu bằng màn hình */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Cột phải: phần màu trắng */
+.professional {
+    background-color: white;
+    color: #333;
+    padding: 40px;
+    width: 70%; /* Chiếm 70% chiều rộng */
+    min-height: 100vh; /* Chiều cao tối thiểu bằng màn hình */
 }
 
 .clearfix:after {
@@ -27,28 +51,18 @@ html {
     clear: both;
 }
 
-.professional {
-    background-color: white;
-    padding: 40px;
-    margin: 0;
-}
-
-.personal {
-    margin: 0;
-    height: 100%;
-}
-
 .personal-header {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 30px 0;
+    text-align: center;
 }
 
 .personal-header img {
     width: 80px;
     height: auto;
-    margin: 0 auto;
     border-radius: 50%;
     display: block;
+    margin: 0 auto;
 }
 
 h1 {
@@ -64,8 +78,7 @@ h2 {
     font-weight: 700;
     text-transform: uppercase;
     color: #42a8c0;
-    display: inline-block;
-    margin-left: 5px;
+    margin: 20px 0 10px 0;
 }
 
 .personal-header p {
@@ -78,14 +91,6 @@ h2 {
 .main-heading {
     margin-top: 40px;
 }
-
-/* .main-heading p {
-    display: inline-block;
-    color: #42a8c0;
-    font-size: 120%;
-    font-weight: 700;
-    margin-left: 4px;
-} */
 
 .main-heading ion-icon {
     display: inline-block;
@@ -106,7 +111,7 @@ h2 {
 }
 
 .personal-details {
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .personal-info {
@@ -154,7 +159,6 @@ h3 {
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
 }
-
 
 .personal-ed-light {
     font-weight: 400;
@@ -238,14 +242,14 @@ h3 {
 }
 
 .skill-container {
-    margin-top: 10px;
+    margin-top: 10px; /* Sửa lỗi từ px thành 10px */
     height: 20px;
 }
 
 .skill-title {
     font-size: 75%;
     font-weight: 700;
-    margin: 0;    
+    margin: 0;
 }
 
 .skill-bg {
@@ -258,5 +262,3 @@ h3 {
     background: #42a8c0;
     height: 100%;
 }
-
-
