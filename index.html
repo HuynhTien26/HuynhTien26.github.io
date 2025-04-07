@@ -17,6 +17,10 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Huỳnh Thị Thủy Tiên - Resume, Sai Gon University, Information Technology student, passionate about coding and AI">
+        <meta name="keywords" content="Huỳnh Thị Thủy Tiên, Resume, Information Technology, AI, Sai Gon University, MOS Certification">
+        <meta name="author" content="Huỳnh Thị Thủy Tiên">
     </head>
     <body>
         <div class="row">
@@ -140,8 +144,72 @@
                         </div>
                     </div>
                 </div>
+    <!-- Dự án-->
+                <div class="main-heading">
+                    <ion-icon name="code"></ion-icon>
+                    <h2>Projects</h2>
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <h3>Project 1</h3>
+                        <p>Description of the project. Explain what the project is about and the technologies used.</p>
+                        <a href="https://link-to-your-project.com" target="_blank">View Project</a>
+                    </div>
+                <!-- Thêm nhiều dự án hơn khi cần thiết -->
+                </div>
+                
+    <!-- Chứng chỉ-->
+                <div class="main-heading">
+                    <ion-icon name="trophy"></ion-icon>
+                    <h2>Certifications</h2>
+                </div>
+                <div class="certifications">
+                    <p><strong>Microsoft Office Specialist (MOS)</strong> - Issued by Microsoft - 2024</p>
+                    <!-- Thêm nhiều chứng chỉ hơn khi cần thiết -->
+                </div>
+                
+     <!-- Nhận xét -->
+                <div class="main-heading">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                    <h2>Testimonials</h2>
+                </div>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"Huỳnh Thị Thủy Tiên is an exceptional student with strong problem-solving skills." - Professor XXX</p>
+                    </div>
+                    <!-- Add more testimonials as needed -->
+                </div>
+
+     <!-- Thông tin liên lạc -->
+                <div class="main-heading">
+                    <ion-icon name="mail-open"></ion-icon>
+                    <h2>Contact Me</h2>
+                </div>
+                <form action="mailto:thtien.2606@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Thủy Tiên:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">thtien.2606@gmail.com:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script>
+            // Ví dụ: Cuộn mượt mà khi nhấp vào liên kết
+            document.querySelectorAll('a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
